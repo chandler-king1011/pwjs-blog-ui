@@ -1,11 +1,56 @@
 #individual-post-title {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
 }
 
 #individual-post-date {
+    border-top: 1px solid #f1f4f8;
+    border-bottom: 1px solid #f1f4f8;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 16px;
+    color: #adb5bd;
 
 }
 
 #individual-post-content {
+    padding-top: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: #495057;
+    line-height: 1.4;
+}
+
+.post-header {
+    min-height: 350px;
+    background-image: url(../assets/banner.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+.post-header::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+.post-navigation a {
+    margin-left: 24px;
+    text-decoration: none;
+    border: 1px solid #004186;
+    border-radius: 5px;
+    color: #004186;
+    padding: 5px 8px;
 
 }
