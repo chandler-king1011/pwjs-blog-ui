@@ -107,7 +107,7 @@ body {
 
 .post > .post_image {
     flex-basis: 40%;
-    background-image: url("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+    
     background-size: cover;
     background-position: center;
 }
