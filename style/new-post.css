@@ -1,12 +1,20 @@
+.new-post-page > .header {
+    background-image: url(../assets/banner.jpeg);
+    background-size: cover;
+    background-position: center;
+}
 
+.header-container {
+    text-align: center;
+}
 form > * {
     display: block;
-    margin-top: 16px;
     font-size: 18px;
+    margin-top: 16px;
 }
 
 #form-post-title {
-    width: 300px;
+    width: calc(100% - 8px);
 }
 
 #form-post-title, #form-post-content {
@@ -17,9 +25,9 @@ form > * {
 }
 
 #form-post-content {
-    width: 100%;
-    min-width: 100%;
-    max-width: 100%;
+    width: calc(100% - 8px);
+    min-width: calc(100% - 8px);;
+    max-width: calc(100% - 8px);;
     min-height: 300px;
 }
 
@@ -35,6 +43,24 @@ form > * {
 
 #form-post-submit:hover {
     background-color: #002349;
+}
+
+
+.post-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.post-navigation a {
+    text-decoration: none;
+    border: 1px solid #004186;
+    border-radius: 5px;
+    color: #004186;
+    padding: 5px 8px;
+}
+
+.post-navigation > .error {
+    color: red;
 }
 
 
