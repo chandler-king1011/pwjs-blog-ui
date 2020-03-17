@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/api/posts";
+const API_URL = "https://api-pwjs-blog.herokuapp.com/api/posts";
 const error = document.querySelector(".error");
 
 
