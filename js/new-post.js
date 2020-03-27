@@ -1,4 +1,4 @@
-const API_URL = "https://api-pwjs-blog.herokuapp.com/api/posts";
+const API_URL = " https://api-pwjs-blog.herokuapp.com/api/posts";
 const error = document.querySelector(".error");
 
 
@@ -16,8 +16,10 @@ const submitNewPost = () => {
         fetch(API_URL, {
             method: "POST",
             body: blogPost
-        }).then(() => {
+        }).then((response) => {
             window.location.href = "./index.html";
+        }).catch(err => {
+            error.innerText="An error occurred";
         })
     }
 }
