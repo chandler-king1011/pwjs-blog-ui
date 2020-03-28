@@ -11,7 +11,7 @@ const submitNewPost = () => {
     let blogPost = new FormData();
         blogPost.append("title", document.querySelector("#form-post-title").value);
         blogPost.append("content", document.querySelector("#form-post-content").value);
-        blogPost.append("post-image", files[0]);
+        blogPost.append("post_image", files[0]);
 
         fetch(API_URL, {
             method: "POST",
