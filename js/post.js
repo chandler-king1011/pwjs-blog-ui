@@ -20,7 +20,7 @@ const getPost = (id) => {
 
 const buildPost = (data) => {
     const postDate = new Date(parseInt(data.posts_date)).toDateString();
-    const imageUrl = `${API_BASE_URL}${data.posts_img}`
+    const imageUrl = `${data.posts_img}`
     document.querySelector(".post-container").innerHTML = 
         `<div id="individual-post-title" class="post-container_title">${data.posts_title}</div>
          <div id="individual-post-date" class="post-container_date">Published on ${postDate}</div>

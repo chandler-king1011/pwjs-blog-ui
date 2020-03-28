@@ -21,7 +21,7 @@ const getPosts = () => {
 const buildPosts = (blogPosts) => {
     document.querySelector(".main_container").innerHTML = blogPosts.map(post => {
         const postDate = new Date(parseInt(post.posts_date)).toDateString();
-        const imageURL = `${API_BASE_URL}${post.posts_img}`;
+        const imageURL = `${post.posts_img}`;
         return `<a href="./post.html?${post.posts_id}" class="post">
                     <div class="post_image" style="background-image: url(${imageURL})"></div>
                     <div class="post_content">
